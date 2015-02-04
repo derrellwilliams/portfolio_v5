@@ -1,0 +1,34 @@
+---
+---
+
+/* Base */
+/* ----------------------------------------------------------*/
+
+@import 'base-reset.scss';
+@import 'typography.scss';
+@import 'utility-white-space.scss';
+@import 'utility-layout.scss';
+@import 'grid.scss';
+@import 'header.scss';
+
+#top, #bottom, #left, #right {
+  background: black;
+  position: fixed;
+  }
+  #left, #right {
+    top: 0; bottom: 0;
+    width: 15px;
+    }
+    #left { left: 0; }
+    #right { right: 0; }
+    
+  #top, #bottom {
+    left: 0; right: 0;
+    height: 15px;
+    }
+    #top { top: 0; }
+    #bottom { bottom: 0; }
+
+  .container-color-gray {
+    background-color: #EEEEEE;
+  }

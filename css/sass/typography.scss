@@ -1,0 +1,44 @@
+h1 {
+	font-size: 45px;
+	font-family: 'gt_walsheim_bold', 'helvetica';
+}
+
+h2 {
+	font-size: 35px;
+	font-family: 'gt_walsheim_medium', 'helvetica';
+}
+
+h3 {
+	font-size: 20px;
+	font-family: 'gt_walsheim_medium', 'helvetica';
+}
+
+h4 {
+	font-size: 16px;
+	font-family: 'gt_walsheim_medium', 'helvetica';
+	text-transform: uppercase;
+}
+
+p {
+	font-family: courier;
+	line-height: 23px;
+	font-size: 15px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+
+  ul li {
+    font-size: 15px;
+    font-family: 'gt_walsheim_medium', 'helvetica';
+  }
+
+ .border-bottom {
+    border-bottom: 4px solid black;
+  }
+
+  .border-white {
+    border: 6px solid white;
+  }

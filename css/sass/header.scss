@@ -1,0 +1,16 @@
+.list-reset {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+  	display: inline;
+  }
+
+  .nav-on {
+  	border-bottom: 8px solid #EEEEEE;
+  }
+}
+
+ul li {
+	font-family: courier;
+}
