@@ -6,10 +6,12 @@
 
 @import 'base-reset.scss';
 @import 'typography.scss';
+@import 'responsive-states.scss';
 @import 'utility-white-space.scss';
 @import 'utility-layout.scss';
 @import 'grid.scss';
 @import 'header.scss';
+
 
 #top, #bottom, #left, #right {
   background: black;
