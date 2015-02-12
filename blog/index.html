@@ -1,0 +1,128 @@
+---
+layout: logo-header-blog
+---
+
+<div class="home">
+{% for post in paginator.posts %}
+  
+  <!-- One Image Post --> 
+  {% if post.image %}
+  <div class="post">  
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image }}" alt="{{ page.title }}"></a>
+    {% if post.title %}
+    {% endif %} 
+  </div>
+{% endif %}
+
+  <!-- Trip Report Post --> 
+  {% if post.image-tr %}
+  <div class="post"> 
+    <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+      <div class="image-container">
+        <img src="{{ site.baseurl }}/images/{{ post.image-tr }}" alt="{{ page.title }}">
+        <div class="tr-link-note">
+          <h4 class="arrow">→</h4>
+          <h4>TRIP REPORT:</h4>
+          <h5>See and read more about this trip</h5>
+        </div>
+      </div>
+    </a>
+    {% if post.title %}
+    {% endif %} 
+  </div>
+{% endif %}
+
+
+
+  <!-- Two Image Post -->   
+
+  {% if post.image_1-2 %}
+    <div class="image_1-2"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image_1-2 }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+  
+  {% if post.image_2-2 %}
+    <div class="image_2-2"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image_2-2 }}" alt="{{ page.title }}"></a></div>
+  {% endif %} 
+
+    <!-- Two Long Image Post -->   
+
+  {% if post.image1-2long %}
+    <div class="image_1-2long"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image1-2long }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+  
+  {% if post.image2-2long %}
+    <div class="image_2-2long"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image2-2long }}" alt="{{ page.title }}"></a></div>
+  {% endif %} 
+
+  
+  <!-- Three Image Post -->    
+  {% if post.image_1-3 %}
+    <div class="image_1-3"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image_1-3 }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+  
+  {% if post.image_2-3 %}
+    <div class="image_2-3"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image_2-3 }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+  
+  {% if post.image_3-3 %}
+    <div class="image_3-3"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image_3-3 }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+
+    <!-- Six Image Post -->    
+  {% if post.image1-6 %}
+    <div class="image_1-6"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image1-6 }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+  
+  {% if post.image2-6 %}
+    <div class="image_2-6"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image2-6 }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+  
+  {% if post.image3-6 %}
+    <div class="image_3-6"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image3-6 }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+
+  {% if post.image4-6 %}
+    <div class="image_4-6"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image4-6 }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+  
+  {% if post.image5-6 %}
+    <div class="image_5-6"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image5-6 }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+  
+  {% if post.image6-6 %}
+    <div class="image_6-6"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image6-6 }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+
+   {% if post.image6-6 %}
+    <div class="image_6-6"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img src="{{ site.baseurl }}/images/{{ post.image6-6 }}" alt="{{ page.title }}"></a></div>
+  {% endif %}
+	
+    <h4><a class="post-link caption-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.image-caption }}</a></h4>
+		<h5><a class="post-link date-link" href="{{ post.url | prepend: site.baseurl }}"><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span></a></h5>
+
+  	{% endfor %}
+</div>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a class="page-labels" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&#8592; Newer</a>
+  {% else %}
+    <span class="page-labels">&#8592; Newer</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}  
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+    <a class="page-labels" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older &#8594;</a>
+  {% else %}
+    <span class="page-labels">Older &#8594;</span>
+  {% endif %}
+</div>
+
+
+
+
