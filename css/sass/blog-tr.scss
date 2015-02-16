@@ -1,0 +1,198 @@
+/*******Layout for Trip Report******/
+
+.tr-wrap {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tr-title-area {
+  background-color: black;
+  position: absolute;
+  top: 115px;
+
+  h1.tr-page-title {
+    font-family: 'gt_walsheim_medium', 'helvetica';
+    font-size: 28px;
+    color: white;
+    display: inline;
+    margin-bottom: 10px;
+  }
+
+  h5.description {
+    font-family: courier;
+    color: white;
+  }
+}
+
+.image-small-left-wrap {
+  width: 40%;
+  float: left;
+  margin-right: 3%;
+}
+
+@media screen and (max-width: 900px)  {
+  .image-small-left-wrap {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+
+}
+
+.image-small-left-caption, .image-small-left-caption-2, .image-small-left-caption-3, .image-small-left-caption-4 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.image-caption {
+  margin-bottom: 20px;
+}
+
+.image-full-center {
+  width: 100%;
+}
+
+.image-bottom-group {
+  margin: 40px 0;
+}
+
+@media screen and (max-width: 1400px)  {
+
+  .item {
+    width: 49%;
+    margin-bottom: 0px;
+  }
+
+}
+
+@media screen and (max-width: 750px)  {
+
+  .item {
+    width: 48.3%;
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 550px)  {
+  .item {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+
+}
+
+p.page-copy {
+  line-height: 28px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+p.page-copy::first-letter { 
+  float: left; 
+  color: #fff;
+  font-size: 40px; 
+  padding: 13px;
+  margin-right: 6px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  font-family: 'gt_walsheim_bold', 'helvetica';
+} 
+
+.image-container {
+  position: relative;
+  width: 100%;
+
+  .tr-link-note {
+    padding: 15px 20px;
+    opacity: .9;
+    right: 10px;
+    top: 25px;
+    position: absolute;
+    border-radius: 1000px;
+    width: 95px;
+    height: 100px;
+
+
+    h4, h5, .arrow {
+      color: #fff;
+      text-align: center;
+      line-height: 14px;
+      font-size: 13px;
+    }
+
+    h4.arrow {
+      font-weight: bold;
+      font-size: 18px;
+      font-family: 'gt_walsheim_bold', 'helvetica';
+      color: #fff;
+      margin: 8px 0 0 0px;
+      padding: 0px;
+    }
+
+    h4 {
+    }
+  }
+}
+
+.tr-link-note:hover {
+
+  h4 {
+    color: black;
+  }
+}
+
+
+.back-button {
+  text-align: center;
+  padding: 6px 15px;
+  color: #fff;
+  width: 35%;
+  margin: 30px auto;
+  border-radius: 3px;
+}
+
+.back-button h3 {
+  color: #fff;
+}
+
+.back-button:hover {
+}
+
+@media screen and (max-width: 500px)  {
+  .tr-link-note {
+    display: none;
+  }
+
+  .back-button {
+    width: 45%;
+  }
+}
+
+
+/*******Pagination******/
+
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+  .page-labels {
+    font-family: 'gt_walsheim_bold', 'helvetica';
+    font-style: normal;
+    color: #D2D2CD;
+    margin: 0px 10px;
+  }
+  a.page-labels {
+    font-family: 'gt_walsheim_bold', 'helvetica';
+    font-style: normal;
+    text-align: center;
+    margin: 0px 6px;
+
+
+    &:hover {
+      border-bottom: 3px solid black;
+    }
+  }

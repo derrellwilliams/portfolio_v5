@@ -1,0 +1,139 @@
+---
+layout: tr
+---
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include logo-header-blog.html %}
+        <div class="page-content">
+          {% if page.image-main %}
+              <img src="{{ site.baseurl }}/images/{{ page.image-main}}"  alt="{{ page.title }}">
+              <div class="tr-title-area pr2 pt2 pb2">
+              	<h5 class="description ml3 mt0 mb0">Trip Report</h5>
+               	<h1 class="tr-page-title ml3 mt4"> {{ page.title }} </h1>  
+              </div>     
+
+          {% endif %}
+
+			<div class="tr-wrap">
+			<!--- <h5> {{ page.date | date: "%B %d, %Y" }} </h5> -->
+				{% if page.image-small-left %}
+				  <div class="image-small-left-wrap">
+				      <img class="image-small-left" src="{{ site.baseurl }}/images/{{ page.image-small-left}}"  alt="{{ page.title }}">
+				      <h4 class="image-small-left-caption">{{ page.image-small-left-caption }}</h4>
+				      
+				      {% if page.image-small-left-2 %}
+				      	<img class="image-small-left" src="{{ site.baseurl }}/images/{{ page.image-small-left-2}}"  alt="{{ page.title }}">
+				      	<h4 class="image-small-left-caption-2">{{ page.image-small-left-caption-2 }}</h4>
+				      {% endif %}
+
+				      {% if page.image-small-left-3 %}
+				      	<img class="image-small-left" src="{{ site.baseurl }}/images/{{ page.image-small-left-3}}"  alt="{{ page.title }}">
+				      	<h4 class="image-small-left-caption-3">{{ page.image-small-left-caption-3 }}</h4>
+				      {% endif %}
+
+				      {% if page.image-small-left-4 %}
+				      	<img class="image-small-left" src="{{ site.baseurl }}/images/{{ page.image-small-left-4}}"  alt="{{ page.title }}">
+				      	<h4 class="image-small-left-caption-4">{{ page.image-small-left-caption-4 }}</h4>
+				      {% endif %}
+
+					</div>
+				{% endif %}
+
+			<p class="page-copy"> {{ page.copy }} </p>
+
+			{% if page.image-full-center %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-2 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-2}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-2 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-3 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-3}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-3 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-4 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-4}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-4 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-5 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-5}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-5 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-6 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-6}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-6 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-7 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-7}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-7 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-8 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-8}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-8 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-9 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-9}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-9 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-10 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-10}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-10 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-11 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-11}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-11 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-12 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-12}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-12 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-13 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-13}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-13 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-14 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-14}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-14 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-15 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-15}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-15 }}</h4>
+			{% endif %}
+
+			{% if page.image-full-center-16 %}
+				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-16}}"  alt="{{ page.title }}">
+				<h4 class="image-caption">{{ page.image-caption-full-center-16 }}</h4>
+			{% endif %}
+
+			<a href="http://matthewdwilliams.com/blog">
+				<div class="back-button">
+					<h3> Take me back to the blog! → </h3>
+				</div>
+			</a>
+			
+
+		{{ content }}
+        </div>
+      </div>
+    {% include footer.html %}
+  </body>
+</html>
