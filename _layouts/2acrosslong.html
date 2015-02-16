@@ -2,12 +2,13 @@
 <html>
   {% include head.html %}
   <body>
-    {% include logo-header-blog.html %}
-        <div class="page-content ml4 mr4">
-          <div class="wrap ml4 mr4 mb4">
+    {% include header.html %}
+        <div class="page-content">
+          <div class="wrap">
 
           {% if page.image %}
-              <img src="{{ site.baseurl }}/images/{{ page.image}}"  alt="{{ page.title }}">
+              <img src="{{ site.baseurl }}/images/{{ page.image1-2long}}"  alt="{{ page.title }}">
+              <img src="{{ site.baseurl }}/images/{{ page.image2-2long}}"  alt="{{ page.title }}">
               <h4>{{ page.image-caption }}</h4>
               <h5> {{ page.date | date: "%B %d, %Y" }} </h5>
           {% endif %}
