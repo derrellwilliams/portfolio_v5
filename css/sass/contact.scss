@@ -1,0 +1,28 @@
+  .contact-container {
+    width: 96%;
+    margin: 0 auto;
+  }
+
+  .contact-image {
+    top: 35px;
+    left: 35%;
+    width: 65%;
+    float: right;
+  }
+
+  .contact-type {
+    z-index: 100;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+  }
+
+  .contact-type a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 5px solid black;
+  }
+
+  .contact-type a:hover {
+    border-bottom: 5px solid $hover;
+  }

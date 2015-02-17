@@ -20,6 +20,7 @@
 
   h5.description {
     font-family: courier;
+    font-weight: 400;
     color: white;
   }
 }
@@ -40,14 +41,12 @@
 
 }
 
-.image-small-left-caption, .image-small-left-caption-2, .image-small-left-caption-3, .image-small-left-caption-4 {
+.image-small-left-caption, .image-caption, .image-small-left-caption-2, .image-small-left-caption-3, .image-small-left-caption-4 {
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  margin-top: 5px;
 }
 
-.image-caption {
-  margin-bottom: 20px;
-}
 
 .image-full-center {
   width: 100%;
@@ -83,7 +82,7 @@
 }
 
 p.page-copy {
-  line-height: 28px;
+  line-height: 25px;
   overflow: hidden;
   margin-bottom: 15px;
 }
@@ -91,8 +90,8 @@ p.page-copy {
 p.page-copy::first-letter { 
   float: left; 
   color: #fff;
-  font-size: 40px; 
-  padding: 13px;
+  font-size: 34px; 
+  padding: 10px;
   margin-right: 6px;
   font-weight: 600;
   color: white;
@@ -105,41 +104,42 @@ p.page-copy::first-letter {
   width: 100%;
 
   .tr-link-note {
-    padding: 15px 20px;
+    padding: 10px 20px 0px 20px;
     opacity: .9;
-    right: 10px;
     top: 25px;
+    right: 0px;
     position: absolute;
-    border-radius: 1000px;
     width: 95px;
     height: 100px;
+    background-color: black;
 
-
-    h4, h5, .arrow {
-      color: #fff;
-      text-align: center;
-      line-height: 14px;
-      font-size: 13px;
-    }
-
-    h4.arrow {
-      font-weight: bold;
-      font-size: 18px;
-      font-family: 'gt_walsheim_bold', 'helvetica';
-      color: #fff;
-      margin: 8px 0 0 0px;
-      padding: 0px;
+    h5 {
+      font-family: courier;
+      font-weight: 400;
     }
 
     h4 {
+      margin-bottom: 8px;
     }
+
+    h4, h5, .arrow {
+      color: #fff;
+      text-align: left;
+      line-height: 12px;
+      font-size: 13px;
+    }
+
   }
 }
 
 .tr-link-note:hover {
 
   h4 {
-    color: black;
+    color: $hover;
+  }
+
+  h5 {
+    color: $hover;
   }
 }
 
@@ -147,10 +147,12 @@ p.page-copy::first-letter {
 .back-button {
   text-align: center;
   padding: 6px 15px;
-  color: #fff;
+  color: white;
   width: 35%;
   margin: 30px auto;
+  margin-bottom: 47px;
   border-radius: 3px;
+  background-color: black;
 }
 
 .back-button h3 {
@@ -158,6 +160,12 @@ p.page-copy::first-letter {
 }
 
 .back-button:hover {
+  background-color: $hover;
+  
+  h3 {
+    color: black;
+  }
+
 }
 
 @media screen and (max-width: 500px)  {
@@ -169,30 +177,3 @@ p.page-copy::first-letter {
     width: 45%;
   }
 }
-
-
-/*******Pagination******/
-
-
-.pagination {
-  text-align: center;
-  margin-top: 20px;
-}
-
-  .page-labels {
-    font-family: 'gt_walsheim_bold', 'helvetica';
-    font-style: normal;
-    color: #D2D2CD;
-    margin: 0px 10px;
-  }
-  a.page-labels {
-    font-family: 'gt_walsheim_bold', 'helvetica';
-    font-style: normal;
-    text-align: center;
-    margin: 0px 6px;
-
-
-    &:hover {
-      border-bottom: 3px solid black;
-    }
-  }

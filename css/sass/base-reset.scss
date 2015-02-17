@@ -1,7 +1,6 @@
 body,
 button {
   margin: 0;
-  
 }
 
 button,
@@ -23,3 +22,11 @@ img {
 svg {
   max-height: 100%;
 }
+
+::selection {
+  background: $hover /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: $hover; /* Gecko Browsers */
+}
+

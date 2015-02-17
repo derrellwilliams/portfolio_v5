@@ -16,3 +16,7 @@
 	color: black;
 	text-decoration: none;
 }
+
+ul.header-list li a:hover {
+    border-bottom: 8px solid $hover;
+}
