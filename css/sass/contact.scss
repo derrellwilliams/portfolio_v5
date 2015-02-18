@@ -24,5 +24,6 @@
   }
 
   .contact-type a:hover {
-    border-bottom: 5px solid $hover;
+    border-bottom: 0px solid $hover;
+    background-color: $hover;
   }

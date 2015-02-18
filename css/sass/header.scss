@@ -15,8 +15,23 @@
 	font-family: courier;
 	color: black;
 	text-decoration: none;
+  padding: 2px;
 }
 
 ul.header-list li a:hover {
-    border-bottom: 8px solid $hover;
+    background-color: $hover;
+    padding: 2px;
 }
+
+.header-list {
+  float: right;
+}
+
+  /******Responsive Header ******/
+  
+  @media #{$breakpoint-sm} {
+    .header-list {
+      float: left;
+      margin-left: 2em;
+   }
+  }
