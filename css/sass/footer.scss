@@ -1,0 +1,32 @@
+.footer-body {
+  background-color: black;
+  height: 40px;
+  width: 100%;
+}
+
+p.rights {
+  float: left;
+  color: white;
+}
+
+p.icons {
+  float: right;
+}
+
+p.icons a {
+  text-decoration: none;
+}
+
+p.icons a:hover {
+  background-color: black;
+  text-decoration: none;
+}
+
+p.icons a img {
+  width: 25px;
+  }
+
+p.versions {
+  color: white;
+  
+}

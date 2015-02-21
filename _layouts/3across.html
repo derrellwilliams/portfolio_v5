@@ -2,17 +2,31 @@
 <html>
   {% include head.html %}
   <body>
-    {% include header.html %}
-        <div class="page-content">
-          <div class="wrap">
+    {% include logo-header-blog.html %}
+        <div class="page-content ml4 mr4 sm-ml0 sm-mr0">
+          <div class="wrap ml4 mr4 mb4 sm-ml3 sm-mr3">
 
-          {% if page.image %}
-              <img src="{{ site.baseurl }}/images/{{ page.image1-3}}"  alt="{{ page.title }}">
-              <img src="{{ site.baseurl }}/images/{{ page.image2-3}}"  alt="{{ page.title }}">
-              <img src="{{ site.baseurl }}/images/{{ page.image3-3}}"  alt="{{ page.title }}">
-              <h4>{{ page.image-caption }}</h4>
-              <h5> {{ page.date | date: "%B %d, %Y" }} </h5>
+          {% if page.image_1-3 %}
+              <div class="image_1-3 mt3">
+                <img src="{{ site.baseurl }}/images/{{ page.image_1-3}}"  alt="{{ page.title }}">
+              </div>
           {% endif %}
+
+          {% if page.image_2-3 %}
+              <div class="image_2-3 mt3">
+                <img src="{{ site.baseurl }}/images/{{ page.image_2-3}}"  alt="{{ page.title }}">
+              </div>
+          {% endif %}
+
+          {% if page.image_3-3 %}
+            <div class="image_3-3 mt3">
+              <img src="{{ site.baseurl }}/images/{{ page.image_3-3}}"  alt="{{ page.title }}">
+            </div>
+          {% endif %}
+
+          <h4>{{ page.image-caption }}</h4>
+          <h5> {{ page.date | date: "%B %d, %Y" }} </h5>
+
 
           <h1> {{ page.title }} </h1>
           <p> {{ page.copy }} </p>
