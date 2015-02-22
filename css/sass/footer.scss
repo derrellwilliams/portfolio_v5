@@ -1,16 +1,12 @@
 .footer-body {
   background-color: black;
-  height: 40px;
   width: 100%;
 }
 
 p.rights {
   float: left;
   color: white;
-}
-
-p.icons {
-  float: right;
+  clear: both;
 }
 
 p.icons a {
@@ -23,10 +19,22 @@ p.icons a:hover {
 }
 
 p.icons a img {
-  width: 25px;
+    width: 25px;
   }
 
 p.versions {
+  clear: both;
+  position: relative;
+}
+
+p.versions, p.versions a {
   color: white;
-  
+}
+
+p.versions a:hover {
+  color: black;
+}
+
+.mrup {
+  margin-top: -14px;
 }
