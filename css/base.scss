@@ -48,6 +48,7 @@ $hover: #ffff9e;
 
   .img-shadow {
     box-shadow: 0px 0px 16px 4px #bcbcbc;
+    background-color: white;
   }
 
   .logo a {
@@ -61,4 +62,9 @@ $hover: #ffff9e;
 
   .logo a:hover {
     text-shadow: 4px 4px 0px $hover;
+  }
+
+  .loading-gif {
+    display:block;
+    margin: 0 auto;
   }
