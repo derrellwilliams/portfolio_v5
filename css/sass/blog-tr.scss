@@ -5,6 +5,10 @@
   margin: 0 auto;
 }
 
+.tr-wrap img {
+  width: 100%;
+}
+
 .tr-title-area {
   background-color: black;
   position: absolute;
@@ -24,6 +28,30 @@
     color: white;
   }
 }
+
+@media screen and (max-width: 400px)  {
+  .tr-title-area {
+  background-color: black;
+  position: relative;
+  top: -4px;
+  margin-bottom: 20px; 
+
+  h1.tr-page-title {
+    font-family: 'gt_walsheim_medium', 'helvetica';
+    font-size: 28px;
+    color: white;
+    display: inline;
+    margin-bottom: 10px;
+  }
+
+  h5.description {
+    font-family: courier;
+    font-weight: 400;
+    color: white;
+  }
+}
+}
+
 
 .image-small-left-wrap {
   width: 40%;

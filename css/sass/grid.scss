@@ -96,6 +96,11 @@ $breakpoint-lg: '(min-width: 64em)';
     box-sizing: border-box;
   }
 
+  .sm-col-left {
+    float: left;
+    box-sizing: border-box;
+  }
+
   .sm-col-1 {
     width: (1/12 * 100%);
   }
