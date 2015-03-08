@@ -18,6 +18,12 @@ $hover: #ffff9e;
 @import 'contact.scss';
 @import 'footer.scss';
 
+/*
+body {
+  cursor: url(/images/pointer.png), auto;
+}
+*/
+
 
 #top, #bottom, #left, #right {
   background: black;
