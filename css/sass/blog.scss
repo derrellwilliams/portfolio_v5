@@ -10,13 +10,6 @@ a {
   text-decoration: none;
 }
 
-.image-container {
-  margin-top: 60px;
-}
-
-.image-container:first-child {
-  margin-top: 0px;
-}
 
 .wrap h5 {
   text-align: center;
@@ -85,7 +78,6 @@ a span.post-date {
     width: 32%;
     padding-right: 1%;
     display: inline-block;
-    margin-top: 40px;
 
   }
 
@@ -93,14 +85,12 @@ a span.post-date {
     width: 32%;
     padding-right: 0%;
     display: inline-block;
-    margin-top: 40px;
   }
 
   @media screen and (max-width: 640px)  {
     .image_1-3, .image_2-3, .image_3-3 {
       width: 100%;
       padding-right: 0%;
-      margin-top: 40px;
 
     }
   }
@@ -109,7 +99,6 @@ a span.post-date {
     .image_1-3, .image_2-3, .image_3-3 {
       width: 100%;
       padding-right: 0%;
-      margin-top: 40px;
 
     }
   }
@@ -120,14 +109,12 @@ a span.post-date {
     width: 49.1%;
     padding-right: .75%;
     display: inline-block;
-    margin-top: 40px;
   }
 
   .image_2-2 {
     width: 49.1%;
     padding-right: 0%;
     display: inline-block;
-    margin-top: 40px;
   }
 
   @media screen and (max-width: 640px)  {
