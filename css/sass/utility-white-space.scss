@@ -397,6 +397,10 @@ $space-6: 6rem !default;
   padding-bottom: $space-2;
 }
 
+.sm-pl0 {
+  padding-left: 0px;
+}
+
 .sm-pl1 {
   padding-left: $space-1;
 }
@@ -411,6 +415,10 @@ $space-6: 6rem !default;
 
 .sm-pl4 {
   padding-left: $space-4;
+}
+
+.sm-pr0 {
+  padding-right: 0px;
 }
 
 .sm-pr1 {
