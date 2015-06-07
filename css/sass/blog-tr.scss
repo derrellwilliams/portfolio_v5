@@ -80,6 +80,30 @@
   width: 100%;
 }
 
+/*******Layout for 3 images of equal size across******/
+
+.image_1-3, .image_2-3 {
+  width: 32%;
+  padding-right: 1%;
+  display: inline-block; }
+
+.image_3-3 {
+  width: 32%;
+  padding-right: 0%;
+  display: inline-block; }
+
+@media screen and (max-width: 640px) {
+  .image_1-3, .image_2-3, .image_3-3 {
+    width: 100%;
+    padding-right: 0%; } }
+@media screen and (max-width: 640px) {
+  .image_1-3, .image_2-3, .image_3-3 {
+    width: 100%;
+    padding-right: 0%; } 
+  }
+
+
+
 .image-bottom-group {
   margin: 40px 0;
 }
