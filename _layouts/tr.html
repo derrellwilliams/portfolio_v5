@@ -9,7 +9,7 @@ layout: tr
     {% include logo-header-blog.html %}
         <div class="page-content">
           {% if page.image-main %}
-              <img class="width mb2" src="{{ site.baseurl }}/images/{{ page.image-main}}"  alt="{{ page.title }}">
+              <img class="width mb2" data-echo="{{ site.baseurl }}/images/{{ page.image-main}}"  alt="{{ page.title }}">
               <div class="tr-title-area pr2 pt2 pb2">
               	<h5 class="description ml3 mt0 mb0">A Trip Report</h5>
                	<h1 class="tr-page-title ml3 mt4"> {{ page.title }} </h1>  
@@ -21,21 +21,21 @@ layout: tr
 			<!--- <h5> {{ page.date | date: "%B %d, %Y" }} </h5> -->
 				{% if page.image-small-left %}
 				  <div class="image-small-left-wrap">
-				      <img class="image-small-left" src="{{ site.baseurl }}/images/{{ page.image-small-left}}"  alt="{{ page.title }}">
+				      <img class="image-small-left" data-echo="{{ site.baseurl }}/images/{{ page.image-small-left}}"  alt="{{ page.title }}">
 				      <h4 class="image-small-left-caption">{{ page.image-small-left-caption }}</h4>
 				      
 				      {% if page.image-small-left-2 %}
-				      	<img class="image-small-left" src="{{ site.baseurl }}/images/{{ page.image-small-left-2}}"  alt="{{ page.title }}">
+				      	<img class="image-small-left" data-echo="{{ site.baseurl }}/images/{{ page.image-small-left-2}}"  alt="{{ page.title }}">
 				      	<h4 class="image-small-left-caption-2">{{ page.image-small-left-caption-2 }}</h4>
 				      {% endif %}
 
 				      {% if page.image-small-left-3 %}
-				      	<img class="image-small-left" src="{{ site.baseurl }}/images/{{ page.image-small-left-3}}"  alt="{{ page.title }}">
+				      	<img class="image-small-left" data-echo="{{ site.baseurl }}/images/{{ page.image-small-left-3}}"  alt="{{ page.title }}">
 				      	<h4 class="image-small-left-caption-3">{{ page.image-small-left-caption-3 }}</h4>
 				      {% endif %}
 
 				      {% if page.image-small-left-4 %}
-				      	<img class="image-small-left" src="{{ site.baseurl }}/images/{{ page.image-small-left-4}}"  alt="{{ page.title }}">
+				      	<img class="image-small-left" data-echo="{{ site.baseurl }}/images/{{ page.image-small-left-4}}"  alt="{{ page.title }}">
 				      	<h4 class="image-small-left-caption-4">{{ page.image-small-left-caption-4 }}</h4>
 				      {% endif %}
 
@@ -45,178 +45,168 @@ layout: tr
 			<p class="page-copy"> {{ page.copy }} </p>
 
 			{% if page.image-full-center %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-2 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-2}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-2}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-2 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-3 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-3}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-3}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-3 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-4 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-4}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-4}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-4 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-5 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-5}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-5}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-5 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-6 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-6}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-6}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-6 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-7 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-7}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-7}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-7 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-8 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-8}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-8}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-8 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-9 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-9}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-9}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-9 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-10 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-10}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-10}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-10 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-11 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-11}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-11}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-11 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-12 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-12}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-12}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-12 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-13 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-13}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-13}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-13 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-14 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-14}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-14}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-14 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-15 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-15}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-15}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-15 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-17 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-17}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-17}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-17 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-18 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-18}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-18}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-18 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-19 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-19}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-19}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-19 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-20 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-20}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-20}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-20 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-21 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-21}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-21}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-21 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-22 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-23}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-23}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-23 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-23 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-24}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-24}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-24 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-24 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-25}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-25}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-25 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-25 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-26}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-26}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-26 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-26 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-27}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-27}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-27 }}</h4>
 			{% endif %}
 
 			{% if page.image-full-center-27 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-28}}"  alt="{{ page.title }}">
+				<img data-echo="{{ site.baseurl }}/images/{{ page.image-full-center-28}}"  alt="{{ page.title }}">
 				<h4 class="image-caption">{{ page.image-caption-full-center-28 }}</h4>
-			{% endif %}
-
-			{% if page.image-full-center-28 %}
-				<img src="{{ site.baseurl }}/images/{{ page.image-full-center-29}}"  alt="{{ page.title }}">
-				<h4 class="image-caption">{{ page.image-caption-full-center-29 }}</h4>
 			{% endif %}
 
 			{% if page.image-three-01 %}
 			    <div class="image_1-3 mt2">
-					<img src="{{ site.baseurl }}/images/{{ page.image-three-01}}"  alt="{{ page.title }}">
+					<img data-echo="{{ site.baseurl }}/images/{{ page.image-three-01}}"  alt="{{ page.title }}">
 				</div>
 			{% endif %}
 
 			{% if page.image-three-02 %}
 				<div class="image_2-3 mt2">
-					<img src="{{ site.baseurl }}/images/{{ page.image-three-02}}"  alt="{{ page.title }}">
+					<img data-echo="{{ site.baseurl }}/images/{{ page.image-three-02}}"  alt="{{ page.title }}">
 				</div>
 			{% endif %}
 
 			{% if page.image-three-03 %}
               	<div class="image_3-3 mt2">
-					<img src="{{ site.baseurl }}/images/{{ page.image-three-03}}"  alt="{{ page.title }}">
+					<img data-echo="{{ site.baseurl }}/images/{{ page.image-three-03}}"  alt="{{ page.title }}">
 				</div>
-			{% endif %}
-
-			{% if page.image-full-center-17 %}
-				<img class="mt2" src="{{ site.baseurl }}/images/{{ page.image-full-center-17}}"  alt="{{ page.title }}">
-				<h4 class="image-caption">{{ page.image-caption-full-center-17 }}</h4>
 			{% endif %}
 
 			{% if page.image-three-04 %}
 			    <div class="image_1-3 mt2">
-					<img src="{{ site.baseurl }}/images/{{ page.image-three-04}}"  alt="{{ page.title }}">
+					<img data-echo="{{ site.baseurl }}/images/{{ page.image-three-04}}"  alt="{{ page.title }}">
 				</div>
 			{% endif %}
 
 			{% if page.image-three-05 %}
 				<div class="image_2-3 mt2">
-					<img src="{{ site.baseurl }}/images/{{ page.image-three-05}}"  alt="{{ page.title }}">
+					<img data-echo="{{ site.baseurl }}/images/{{ page.image-three-05}}"  alt="{{ page.title }}">
 				</div>
 			{% endif %}
 
 			{% if page.image-three-06 %}
               	<div class="image_3-3 mt3">
-					<img src="{{ site.baseurl }}/images/{{ page.image-three-06}}"  alt="{{ page.title }}">
+					<img data-echo="{{ site.baseurl }}/images/{{ page.image-three-06}}"  alt="{{ page.title }}">
 				</div>
 			{% endif %}
 
@@ -231,6 +221,21 @@ layout: tr
         </div>
       </div>
     {% include footer.html %}
+
+	<!-- lazyload.js -->
+    <script src="/javascripts/lazyload.js"></script>
+    <script>
+    echo.init({
+      offset: 850,
+      throttle: 300,
+      unload: false,
+      callback: function (element, op) {
+        console.log(element, 'has been', op + 'ed')
+      }
+    });
+    </script>
+
+
     <!-- Start of StatCounter Code for Default Guide -->
         <script type="text/javascript">
         var sc_project=7183077; 
@@ -238,11 +243,11 @@ layout: tr
         var sc_security="a147fd4f"; 
         </script>
         <script type="text/javascript"
-        src="http://www.statcounter.com/counter/counter.js"></script>
+        data-echo="http://www.statcounter.com/counter/counter.js"></script>
         <noscript><div class="statcounter"><a title="website
         statistics" href="http://statcounter.com/"
         target="_blank"><img class="statcounter"
-        src="http://c.statcounter.com/7183077/0/a147fd4f/1/"
+        data-echo="http://c.statcounter.com/7183077/0/a147fd4f/1/"
         alt="website statistics"></a></div></noscript>
     <!-- End of StatCounter Code for Default Guide -->
   </body>
