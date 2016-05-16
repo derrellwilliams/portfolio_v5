@@ -16,6 +16,7 @@ layout: logo-header-blog
   </div>
 {% endif %}
 
+  
   <!-- Trip Report Post --> 
   {% if post.image-tr %}
   <div class="post"> 
@@ -97,11 +98,11 @@ layout: logo-header-blog
    {% if post.image6-6 %}
     <div class="image_6-6"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><img data-echo="{{ site.baseurl }}/images/{{ post.image6-6 }}" alt="{{ page.title }}"></a></div>
   {% endif %}
-	
+  
     <h4><a class="post-link caption-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.image-caption }}</a></h4>
-		<h5 class="mb4"><a class="post-link date-link" href="{{ post.url | prepend: site.baseurl }}"><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span></a></h5>
+    <h5 class="mb4"><a class="post-link date-link" href="{{ post.url | prepend: site.baseurl }}"><span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span></a></h5>
 
-  	{% endfor %}
+    {% endfor %}
 </div>
 
 <!-- Pagination links -->
@@ -123,7 +124,3 @@ layout: logo-header-blog
     <span class="page-labels">Older &#8594;</span>
   {% endif %}
 </div>
-
-
-
-
