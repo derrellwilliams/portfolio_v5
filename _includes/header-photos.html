@@ -1,0 +1,22 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="{{ site.description }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ "/css/base.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/fonts.css" | prepend: site.baseurl }}">
+    <script src="/javascripts/instafeed.js"></script>
+
+    <script type="text/javascript">
+      var userFeed = new Instafeed({
+          get: 'user',
+          userId: 6287031,
+          accessToken: '6287031.1677ed0.c34383dbfdb64c37bfa7996d797fdc91'
+      });
+      userFeed.run();
+    </script>
+</head>
