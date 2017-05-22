@@ -1,3 +1,15 @@
+/* Bagnard Sans */
+
+@font-face {
+    font-family: 'BagnardSans';
+    src: url('/fonts/BagnardSans.otf');
+    src: url('/fonts/BagnardSans.woff') format('woff'),
+         url('/fonts/BagnardSans.ttf') format('truetype'),
+         url('/fonts/BagnardSans.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* GT Walsheim Web Medium */
 
 @font-face {
